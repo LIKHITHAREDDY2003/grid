@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+  <style>
+    .container {
+
+      height: 501px;
+      width: 330px;
+      position: relative;
+      /*  border-bottom-width:50px;
+                    border-top-width:50px;*/
+      border-style: solid;
+      border-radius: 5%;
+      background-image: url(https://www.kindpng.com/picc/m/448-4482131_family-siblings-anime-anime-brother-and-sister-hd.png);
+      background-size: cover;
+      background-position-x: center;
+      object-fit: cover;
+      /* border-bottom-color: lavender;
+                    border-top-color: green;*/
+    
+
+    }
+
+    .df{
+      border: 1px solid;
+      position:absolute;
+      height:430px;
+      top:52px;
+      width:330px;
+      overflow: scroll;
+      scrollbar-width: none;
+    }
+    .top {
+      position: fixed;
+    }
+
+    .absolute {
+      position: absolute;
+      top: -40px;
+      left:-110px
+
+    }
+
+   /* img {
+      position: absolute;
+      left: 25px;
+      width: 30px;
+      border-radius: 50%;
+    }*/
+
+    p {
+      position: absolute;
+      top: -15px;
+      ;
+      left: 250%;
+      font-size: large;
+
+    }
+
+    .b {
+      position: absolute;
+      top:-50px;
+      right: -80px;
+     /* position: absolute;
+      top: -40px;
+      left:-110px*/
+    }
+    
+    #dots{
+      position: absolute;
+      top:-36px;
+      left: 300px;
+      cursor: pointer;
+     
+     
+    }
+   
+  
+
+    .n {
+      position: absolute;
+      bottom: 0px;
+      left: 14px;
+      margin-left: -9px;
+
+
+    }
+
+    .c {
+      position: absolute;
+      left: 10px;
+      bottom: 0%;
+
+    }
+
+    .d {
+      position: absolute;
+      right: 3%;
+      bottom: 0px;
+    }
+
+    .r {
+      position: absolute;
+     
+      right:  -25px;
+      bottom: -4px;
+      
+      
+
+    }
+
+    .ab {
+      width: 330px;
+      height: 50px;
+      border: 1px solid;
+      position: fixed;
+      margin-right: 5px;
+      border-top-left-radius: 17px;
+      border-top-right-radius: 17px;
+      background-color: rgb(0, 128, 92);
+      z-index: 1;
+    }
+
+    .bc {
+      width: 330px;
+      height: 33px;
+      position: fixed;
+      bottom: 85px;
+      margin-right: 5px;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+
+    }
+
+    .rg {
+      bottom: 180px;
+      position: fixed;
+      
+    }
+
+
+    input {
+      border-radius: 50px;
+      border: 1px solid rgb(209, 199, 199)
+    }
+
+    .abc {
+      
+      padding:6px;
+      display:inline-block;
+      margin-left: 7px;
+      float:left;
+      left: 100px;
+       font-size: large;
+      border-radius: 7px;
+      background-color: lavender;
+    }
+
+    .abc1 {
+      
+    
+      font-size: large;
+      display:inline-block;
+      margin-right: 7px;
+      float:right;
+      padding:6px;
+      border-radius: 7px;
+      background-color: rgb(127, 255, 170);
+     
+    }
+  /* .anchor{
+    width: 200px;
+    border:1px solid;
+    display: none;
+    background-color: rgba(144, 238, 216, 0.668);
+    }
+    .anchor>a{
+      display:block;
+      text-decoration:none;
+      margin:10px;
+      color: #000;
+    }*/
+   /* .div:hover > .colon + .anchor{
+      display: block;
+    }*/
+    
+        
+        .anchor {
+             background-color: aqua;
+             border: solid 1px;
+            
+             width: 200px;
+             margin:30px;
+             border:none;
+            display: none;
+        }
+        
+        a:hover{
+          background-color:lightskyblue;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+             display: block;
+             margin:2px;
+             width:200px;
+
+        }
+    #dots:hover ~ .anchor>.a {
+      
+         display:block;
+       }
+   
+    .tick{
+     
+      position:absolute;
+    }
+    .gh{
+      position:absolute;
+      left:10px;
+
+    }
+    .top{
+       border: 1px solid;
+       background-color: rgb(110, 110, 136);
+       position:sticky;
+       top:63px;
+       left:130px;
+       z-index: 1;
+       width:100px;
+    }
+    .date1{
+      position:sticky;
+      left:120px;
+      top:11px;
+      width:100px;
+      background-color: rgb(184, 147, 206);
+      border:1px solid;
+      border-radius:30px;
+
+    }
+    .date2{
+      position:sticky;
+      left:120px;
+      top:11px;
+      width:100px;
+      background-color: rgb(184, 147, 206);
+      border:1px solid;
+      border-radius:30px;
+    }
+    .date3{
+      position:sticky;
+      left:120px;
+      top:11px;
+      width:100px;
+      background-color: rgb(184, 147, 206);
+      border:1px solid;
+      border-radius:30px;
+    }
+    .time{
+      font-size:11px;
+    }
+    .ticked{
+      position:relative;
+      left: 70px;
+    
+    }
+    .dp img{
+      position: absolute;
+      border-radius: 50px;
+      left:30px;
+      top:0px;
+    }
+    .done{
+      position: absolute;
+      top:100px;
+    left: 600px;
+    height:100px;
+    z-index: -1;
+    font-size:20px;
+    width:100px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="bc">
+    </div>
+    <div class="ab">
+    </div>
+
+      <div class="top">
+        <div class="absolute">
+          <span class="material-symbols-outlined">
+            arrow_back
+          </span>
+          <div class="dp">
+            <img src="../blue.jpg" width="25px">
+            </div>
+           <p> Bunny</p>
+          
+        </div>
+       <div class="b">
+          <pre>
+           <span class="material-symbols-outlined">
+           video_call
+           
+           </span><span class="material-symbols-outlined">
+            call
+            </span>
+          </pre>
+        </div>
+          <!-- <div class="colon">
+            <span class="material-symbols-outlined" id="dots">
+            more_vert
+           </span> -->
+           <div id="dots"> <i  class="fa-solid fa-ellipsis-vertical"></i></div>
+        
+           <div class="anchor">
+           <a href="#">Media,links and docs </a>
+           <a href="#">search </a>
+           <a href="#">Disappearing meassages </a>
+           <a href="#">wallpaper </a>
+           <a href="#">more</a>
+           </div>
+          </div>
+  </div>
+  </div>
+  
+    <div class="df">
+      <div class="date1">12 jun 2024</div>
+    <div class="abc">
+     <span>Hi akka &#128522;</span>
+    </div><br><br>
+    <div class="abc1">
+      <span >hlo &#128128;</span>
+      <span class="time">12:45pm<i class="fa-solid fa-check-double done"></i>
+    </span>
+        </div><br><br>
+    <div class="abc">
+      m dng
+    </div><br><br>
+    <div class="abc1">
+      <span>m ledu</span>
+      <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc1">
+     <span>nuv</span>
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+      kali
+    </div><br><br>
+    <div class="abc1">
+    <span>tinnava</span>
+    <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+     <span>led</span>
+    </div><br><br>
+    <div class="abc">
+     nuv
+    </div><br><br>
+    <div class="abc1">
+    <span>tinali</span>
+    <span class="time">12:45pm</span>
+    </div><br><br>
+   
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc1">
+    <span>ok</span> 
+    <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+     bye
+    </div><br><br>
+    <div class="date2">11 jun 2024</div>
+    <div class="abc">
+     hlo chitti
+    </div><br><br>
+    <div class="abc">
+      money pampu
+     
+     </div>
+    <br><br>
+    
+    <div class="abc1">
+      enduku ra
+      <span class="time">12:45pm</span>
+    </div>
+    <br><br>
+    <div class="abc">
+     petrol ki kavali
+     
+    </div><br><br>
+    <div class="abc1">
+    <span> na daggara lev</span>
+    <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+      hey pampu
+    </div><br><br>
+    <div class="abc1">
+     pampina chud
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+      ok bye
+     </div><br><br>
+     <div class="abc1">
+      bye
+      <span class="time">12:45pm</span>
+     </div><br><br>
+     <div class="date3">1 jun 2024</div>
+     <div class="abc1">
+      hlo wastefellow
+      <span class="time">12:45pm</span>
+     </div><br><br>
+     <div class="abc">
+      enti
+     </div><br><br>
+    <div class="abc1">
+      m chestunnav
+      <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+      series chustunna
+     </div><br><br>
+    <div class="abc1">
+     m series
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="gh">
+      <video controls height="100px">
+        <source src="../Surya Web Series __ Episode - 1 __ Shanmukh Jaswanth __ Mounika Reddy __ Infinitum Media.mp4">
+    </video> </div><br><br><br><br><br>
+    <div class="abc1">
+     ade pani nik
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+     nik enduku
+    </div><br><br>
+    <div class="abc">
+     wastefellow
+    </div><br><br>
+    <div class="abc1">
+     okkati ikuta
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc1">
+     sakkaga clg ki nadu
+     <span class="time">12:45pm</span>
+    </div><br><br>
+    <div class="abc">
+     na istam
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div><br><br>
+    <div class="abc">
+     ok
+    </div>
+    
+ 
+ </div>
+     
+    
+  
+
+    <div class="rg">
+      <div class="n">
+        <input type="text" placeholder="&emsp; &emsp; &emsp; &emsp; Message" size="39" style="height: 25px;">
+        <div class="c">
+          <span class="material-symbols-outlined">
+            mood
+          </span>
+        </div>
+        <div class="d">
+          <span class="material-symbols-outlined">
+            attach_file
+          </span>
+          <span class="material-symbols-outlined">
+            currency_rupee_circle
+          </span>
+          <span class="material-symbols-outlined">
+            photo_camera
+          </span>
+        </div>
+        <div class="r">
+          <img src="https://image.shutterstock.com/image-vector/whatsapp-send-voice-message-vector-260nw-787086673.jpg" width="25">
+        </div>
+      </div>
+     
+    </div>
+   
+</body>
+
+</html>

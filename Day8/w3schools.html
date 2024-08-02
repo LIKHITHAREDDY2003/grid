@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+    
+    <style>
+        .container{
+          background-color: black;
+        padding:10px;
+        gap: 30px;;
+        height: 40px;
+        border: solid 2px;
+        display: flex;
+        justify-content: space-around;
+        overflow-x:scroll;
+        scrollbar-width: none;
+       }
+      .item:hover{
+        background-color:gray;
+        color: black;
+      }
+      .item{
+        color: white;
+        padding-top: 10px;
+        justify-content: space-between;
+        margin: 7px;
+      }
+      .item1{
+         margin-left: 10px;;
+       }
+      .top{
+         display:flex;
+         font-size: 20px;
+        justify-content:start;
+        gap: 20px;
+        }
+          .top>.item2{
+           
+            padding: 10px;
+           
+          }
+          .item2:hover{
+        background-color: green;
+        color: white;
+    }
+    .item2::after{
+        content: '▼';
+        font-size: 10px;
+    }
+   
+    
+          .item5{
+            padding: 10px;
+           
+          }
+          .item5:hover{
+        background-color:rgb(216, 226, 233);
+        border-radius: 10px;
+    }
+          .item6{
+        padding-top: 10px;
+    }
+          .d3{
+        position: absolute;
+        border: solid 2px;
+        padding: 10px;
+        width: 70px;
+        right:100px;
+        background-color: rgb(10, 187, 10);
+        border-radius: 15px;
+        z-index: 1;
+        color:aliceblue
+    }
+    .d4{
+        position: absolute;
+        
+        width: 70px;
+        padding: 10px;
+        right:30px;
+        background-color:rgb(213, 230, 213);
+        border-radius: 15px;
+    }
+    .d3:hover{
+        background-color:rgb(88, 221, 68) ;
+    }
+    .d4:hover{
+        color: aliceblue;
+        background-color: rgb(10, 187, 10); 
+    }
+   
+    .z{
+        color:rgb(159, 73, 205);
+        display: inline;
+    }
+    .item6:hover{
+        background-color:rgb(216, 225, 231);
+        border-radius: 10px;
+    }
+    .item6::before{
+        content: '</>';
+        color:rgb(159, 73, 205);
+        font-weight:bolder;
+    }
+    .search{
+      position:absolute;
+      top:10px;
+      left:90px;
+    
+    }
+    .item3{
+      position: absolute;
+      left:580px;
+      top:12px;
+    }
+    .circle{
+      position: absolute;
+      top:6px;
+      font-size: 24px;;
+    }
+ 
+    </style>
+</head>
+<body>
+    
+        <div class="top">
+            <div class="item1"><img src="https://tse4.mm.bing.net/th?id=OIP.7VL19R7wdmS9YVqTLVafwgHaHa&pid=Api&P=0&h=220" width=40px;></div>
+            <div class="item2">Tutorials </div>
+            <div class="item2">Excercises</div>
+            <div class="item2">Certificates</div>
+            <div class="item2">Services</div>
+            <div class="item3"> <input type="text" placeholder="search.... " style="border-radius: 10px; height:30px;" size="13"><i class="fa-solid fa-magnifying-glass search"></i>&emsp;<i class="fa-solid fa-circle-half-stroke circle"></i></div> 
+            &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;
+            <div class="item4"><i></i></div>
+            <div class="item5"><div class=z><i class="fa-regular fa-star"></i></div>Plus</div>
+             <div class="item6"> Spaces</div>
+             <div class="item5"><div class=z><i class="fa-solid fa-cart-shopping"></i></div>Certified</div>
+             <div class="d3">Submit</div>
+            <div class="d4"> &emsp;Login</div>
+        </div><br>
+    <div class="container">
+       <div class="item">HTML</div>
+      <div class="item">CSS</div>
+      <div class="item">JAVASCRIPT</div>
+      <div class="item">SQL</div> 
+      <div class="item">PYTHON</div>
+      <div class="item">JAVA</div>
+      <div class="item">PHP</div> 
+      <div class="item">HOWTO</div>
+      <div class="item">W3CSS</div>
+      <div class="item">C</div>
+      <div class="item">C++</div>
+      <div class="item">C#</div>
+      <div class="item">BOOTSTRAP</div>
+      <div class="item">REACT</div>
+      <div class="item">JQUERY</div>
+      <div class="item">EXCEL</div>
+      <div class="item">XML</div>
+      <div class="item">DJANGO</div>
+      <div class="item">NUMPY</div>
+      <div class="item">PANDAS</div>
+      <div class="item">NODEJS</div>
+      <div class="item">TYPESCRIPT</div>
+      <div class="item">R</div> 
+      <div class="item">ANGULAR</div>
+      <div class="item">GIT</div>
+      <div class="item">POSTGRESQL</div>
+      <div class="item">MANGODb</div>
+      <div class="item">ASP</div>
+    </div>   
+</body>
+</html>

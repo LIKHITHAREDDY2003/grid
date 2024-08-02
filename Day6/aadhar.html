@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .but{
+          height:40px;
+          width:100px;  
+        }
+        .but:focus-within + .content{
+           display: block; 
+        }
+        .content {
+             border: solid 1px;
+             height: 500px;
+             width: 300px;
+             margin:30px;
+             border:none;
+            display: none;
+        }
+        p{
+          
+            width:200px;
+            font-size: large;
+            font-weight: bold;
+        }
+        p:hover{
+          background-color: gray;
+        }
+    </style>
+</head>
+<body>
+      <button class="but">My Aadhar</button>
+       <div class="content">
+        <table border="1">
+            <tr>
+                <td> 
+                    <p>Update your Aadhar</p>                <p>Get aadhar</td>
+                    <p>Document Update</p>
+                    <p>Book an appointment</p>
+                    <p>Check Aadhar Update Status</p>
+              </td>
+              <td><p>Check Aadhar Update Status</p>
+                <p>Check Aadhaar Update</p>
+                <p>Book an appointment</p>
+                    <p>Check Aadhar Update Status</p>
+            </td>
+            </tr>
+           
+        </table>
+       
+       </div>
+</body>
+</html>

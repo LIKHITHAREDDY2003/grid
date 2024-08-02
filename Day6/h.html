@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .but{
+        border:2px solid;
+        font-size: large;
+        padding:10px;
+        cursor: pointer;
+       }
+       .but:hover{
+       background-color: aqua;
+       }
+       
+       
+       .content{
+        display:none;
+       border:1px solid;
+        width:100px;
+        background-color:blueviolet;
+       }
+       .content>a{
+        margin:10px;
+        background-color: blue;
+        display:block;
+        text-decoration:none;
+        text-align:center;
+        padding:10px;
+        color:black;
+       }
+       .but:hover + .content{
+         display:block;
+       }
+       .content:hover{
+         background-color: black;
+       }
+      
+    </style>
+</head>
+<body>
+   <button class="but">shopping</button>
+   <div class="content">
+    <a href="#">amazon</a>
+    <a href="#">flipkart</a>
+    <a href="#">meesho</a>
+    <a href="#">ajio</a>
+   </div>
+</html>
